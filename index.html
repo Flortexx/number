@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Program s číselným polem</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Spočítejte průměr čísel v poli:</h2>
+        <input type="text" id="averageInput" class="input-field" placeholder="Zadejte čísla oddělená čárkou">
+        <button onclick="calculateAverage()" class="button">Spočítej průměr</button>
+        <input type="text" id="averageOutput" class="output-field" readonly>
+    
+        <h2>Zjistěte nejvyšší a nejnižší číslo v poli:</h2>
+        <input type="text" id="minMaxInput" class="input-field" placeholder="Zadejte čísla oddělená čárkou">
+        <button onclick="findMinMax()" class="button">Najdi min/max</button>
+        <input type="text" id="minOutput" class="output-field" readonly>
+        <input type="text" id="maxOutput" class="output-field" readonly>
+    
+        <h2>Změna velkých a malých písmen:</h2>
+        <input type="text" id="caseInput" class="input-field" placeholder="Zadejte text">
+        <button onclick="changeCase('uppercase')" class="button">Velká písmena</button>
+        <button onclick="changeCase('lowercase')" class="button">Malá písmena</button>
+        <input type="text" id="caseOutput" class="output-field" readonly>
+    
+        <h2>Kombinace dvou polí do jednoho:</h2>
+        <input type="text" id="combineInput1" class="input-field" placeholder="Zadejte první pole čísel oddělená čárkou">
+        <input type="text" id="combineInput2" class="input-field" placeholder="Zadejte druhé pole čísel oddělená čárkou">
+        <button onclick="combineArrays()" class="button">Kombinuj pole</button>
+        <input type="text" id="combineOutput" class="output-field" readonly>
+    
+        <h2>Vytvoření objektu:</h2>
+        <button onclick="createObject()" class="button">Vytvoř objekt</button>
+        <input type="text" id="objectOutput" class="output-field" readonly>
+    
+        <h2>Kontrola existence prvku v množině:</h2>
+        <input type="text" id="setInput" class="input-field" placeholder="Zadejte množinu čísel oddělenou čárkou">
+        <input type="text" id="elementToCheck" class="input-field" placeholder="Zadejte prvek k ověření">
+        <button onclick="checkExistence()" class="button">Zkontroluj existenci</button>
+        <input type="text" id="existenceOutput" class="output-field" readonly>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
